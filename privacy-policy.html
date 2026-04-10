@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Holy Hour War Room</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0A0E1F;
+      --navy-card: #12172B;
+      --gold: #C9A84C;
+      --gold-light: #E2C47A;
+      --text: #E8E8F0;
+      --text-muted: #8888AA;
+      --border: rgba(201,168,76,0.2);
+      --radius: 12px;
+    }
+
+    body {
+      background: var(--navy);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0D1226 0%, #1A1E35 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 40px 24px 36px;
+      text-align: center;
+    }
+    .logo-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+    .logo-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+    }
+    .app-name {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 0.5px;
+    }
+    .app-tagline { font-size: 13px; color: var(--text-muted); }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .updated {
+      font-size: 13px;
+      color: var(--text-muted);
+      background: rgba(201,168,76,0.1);
+      border: 1px solid var(--border);
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 99px;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .safety-banner {
+      background: rgba(76,175,80,0.1);
+      border: 1px solid rgba(76,175,80,0.3);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 40px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .safety-banner .icon { font-size: 28px; flex-shrink: 0; }
+    .safety-banner strong { color: #81C784; display: block; font-size: 16px; margin-bottom: 6px; }
+    .safety-banner p { color: var(--text-muted); font-size: 14px; line-height: 1.6; }
+
+    .section {
+      background: var(--navy-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+    .section-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 700;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 18px 0 8px;
+    }
+    p { color: var(--text-muted); margin-bottom: 12px; }
+    p:last-child { margin-bottom: 0; }
+    ul, ol {
+      padding-left: 20px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    li { margin-bottom: 6px; }
+    strong { color: var(--text); }
+    a { color: var(--gold-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      font-size: 14px;
+    }
+    .data-table th {
+      background: rgba(201,168,76,0.1);
+      color: var(--gold);
+      font-weight: 600;
+      padding: 10px 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .data-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      color: var(--text-muted);
+      vertical-align: top;
+    }
+    .data-table tr:last-child td { border-bottom: none; }
+    .badge {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 99px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    .badge-yes { background: rgba(76,175,80,0.2); color: #81C784; }
+    .badge-no { background: rgba(244,67,54,0.2); color: #E57373; }
+    .badge-optional { background: rgba(255,152,0,0.2); color: #FFB74D; }
+
+    .youth-section {
+      background: rgba(33,150,243,0.08);
+      border: 1px solid rgba(33,150,243,0.25);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+    .youth-section h2 { color: #64B5F6; }
+    .youth-section .section-number { background: #64B5F6; }
+    .youth-section p, .youth-section li { color: rgba(200,220,255,0.75); }
+    .youth-section strong { color: #90CAF9; }
+
+    .rights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .right-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .right-icon { font-size: 22px; margin-bottom: 6px; }
+    .right-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+    .right-desc { font-size: 13px; color: var(--text-muted); }
+
+    .contact-card {
+      background: rgba(201,168,76,0.07);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      text-align: center;
+    }
+    .contact-card .icon { font-size: 36px; margin-bottom: 10px; }
+    .contact-card h2 { justify-content: center; color: var(--gold); font-size: 18px; margin-bottom: 10px; }
+    .contact-card p { color: var(--text-muted); margin-bottom: 6px; }
+    .email-link {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 700;
+      padding: 10px 24px;
+      border-radius: 99px;
+      margin-top: 14px;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+    }
+    footer strong { color: var(--gold); }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 24px; }
+      .section, .youth-section { padding: 20px 16px; }
+      .rights-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-row">
+    <div class="logo-icon">🦁</div>
+    <div>
+      <div class="app-name">Holy Hour War Room</div>
+      <div class="app-tagline">Prayer · Fasting · Vigil Community</div>
+    </div>
+  </div>
+  <h1>Privacy Policy</h1>
+  <p style="color: var(--text-muted); margin-top:6px;">Your faith, your data — protected.</p>
+  <span class="updated">Last Updated: April 10, 2026</span>
+</header>
+
+<div class="container">
+
+  <div class="safety-banner">
+    <div class="icon">🛡️</div>
+    <div>
+      <strong>Built with Safety First</strong>
+      <p>Holy Hour War Room was designed from the ground up for faith communities — including children. We do <strong>not</strong> track users, sell data, serve ads, or share information with third parties for commercial purposes. This policy explains exactly what we collect and why.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="section-number">1</span> Who We Are</h2>
+    <p><strong>Holy Hour War Room</strong> is a faith-community mobile application for prayer rooms, fasting challenges, scripture study, and church group communication.</p>
+    <p>Developer contact: <a href="mailto:debeortiz@gmail.com">debeortiz@gmail.com</a> or <a href="mailto:cristovieneprontobydeborah@gmail.com">cristovieneprontobydeborah@gmail.com</a></p>
+    <p>This Privacy Policy applies to the Holy Hour War Room mobile app (iOS and Android) and describes how we handle personal information.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="section-number">2</span> Data We Collect</h2>
+    <p>We collect only what is necessary to operate the app's features. <strong>No data is sold. No advertising SDKs are included.</strong></p>
+    <table class="data-table">
+      <thead>
+        <tr><th>Data Type</th><th>Why We Collect It</th><th>Required?</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Email address</strong></td>
+          <td>Account creation and login via Supabase Auth. Used for password reset and parent-approval emails.</td>
+          <td><span class="badge badge-yes">Required</span></td>
+        </tr>
+        <tr>
+          <td><strong>Display name</strong></td>
+          <td>Shown in prayer rooms, group chat, and the prayer wall. May be a real name or a chosen username — your choice.</td>
+          <td><span class="badge badge-yes">Required</span></td>
+        </tr>
+        <tr>
+          <td><strong>Profile photo</strong></td>
+          <td>Optional profile avatar uploaded by the user. Stored securely in Supabase Storage.</td>
+          <td><span class="badge badge-optional">Optional</span></td>
+        </tr>
+        <tr>
+          <td><strong>User-generated content</strong></td>
+          <td>Prayer requests, praise reports, group chat messages, and Bible annotations you create.</td>
+          <td><span class="badge badge-optional">Optional</span></td>
+        </tr>
+        <tr>
+          <td><strong>Push notification token</strong></td>
+          <td>Device token used to deliver prayer room alerts and vigil reminders to your device. Not shared with advertisers.</td>
+          <td><span class="badge badge-optional">Optional</span></td>
+        </tr>
+        <tr>
+          <td><strong>Church / ministry name</strong></td>
+          <td>Optional field shown on your profile. Helps community identify your congregation context.</td>
+          <td><span class="badge badge-optional">Optional</span></td>
+        </tr>
+        <tr>
+          <td><strong>Fasting records</strong></td>
+          <td>Start/end times of your fasting sessions and milestone badges. Stored in your account only.</td>
+          <td><span class="badge badge-optional">Optional</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>What We Do NOT Collect</h3>
+    <ul>
+      <li>📍 <strong>Location</strong> — we never request or store GPS or location data</li>
+      <li>💳 <strong>Payment information</strong> — the app is free; no purchases are processed</li>
+      <li>📞 <strong>Phone numbers</strong> — not collected or required</li>
+      <li>🏃 <strong>Physical activity / health data</strong> — no fitness or sensor data is accessed</li>
+      <li>📋 <strong>Contacts</strong> — we never access your device address book</li>
+      <li>🍪 <strong>Advertising identifiers</strong> — no ad networks, no tracking pixels</li>
+      <li>🌐 <strong>Browsing history</strong> — we do not track activity outside this app</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2><span class="section-number">3</span> How We Use Your Data</h2>
+    <ul>
+      <li><strong>Authentication</strong> — to log you in and keep your session secure</li>
+      <li><strong>Community features</strong> — to show your content in prayer rooms, groups, and the prayer wall</li>
+      <li><strong>Notifications</strong> — to alert you when a vigil starts or when someone prays for your request</li>
+      <li><strong>Youth safety</strong> — to enforce parental-consent requirements and leader-verified group access</li>
+      <li><strong>Moderation</strong> — keyword safety filters automatically flag content that may harm minors</li>
+      <li><strong>App improvement</strong> — crash reports and anonymous usage patterns help us fix bugs</li>
+    </ul>
+    <p>We do <strong>not</strong> use your data for advertising, profiling, or to train AI models.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="section-number">4</span> Sharing &amp; Third Parties</h2>
+    <h3>Service Providers We Use</h3>
+    <table class="data-table">
+      <thead>
+        <tr><th>Provider</th><th>Purpose</th><th>Data Shared</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Supabase</strong></td>
+          <td>Database, authentication, file storage, real-time sync</td>
+          <td>Account data, content, session tokens</td>
+        </tr>
+        <tr>
+          <td><strong>Jitsi Meet</strong></td>
+          <td>Open-source video conferencing for prayer rooms</td>
+          <td>Display name during an active call only</td>
+        </tr>
+        <tr>
+          <td><strong>Expo Notifications</strong></td>
+          <td>Push notification delivery</td>
+          <td>Push token (no personal data)</td>
+        </tr>
+        <tr>
+          <td><strong>Resend</strong> (optional)</td>
+          <td>Transactional email (parent approval, password reset)</td>
+          <td>Parent email address only when parent-approval flow is used</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>We Never Share With</h3>
+    <ul>
+      <li>Advertising networks or data brokers</li>
+      <li>Social media platforms</li>
+      <li>Government agencies (unless required by a valid legal order)</li>
+      <li>Any party for commercial purposes</li>
+    </ul>
+  </div>
+
+  <div class="youth-section">
+    <h2><span class="section-number">5</span> Children &amp; Youth Safety (COPPA / GDPR-K)</h2>
+    <p>Holy Hour War Room takes the safety of minors seriously. The following rules apply to all accounts flagged as belonging to users under 18:</p>
+    <ul>
+      <li>✅ Minors <strong>cannot</strong> be added to any group without explicit parent or guardian consent</li>
+      <li>✅ Youth accounts <strong>cannot</strong> initiate contact with adult members outside their verified group</li>
+      <li>✅ Chat access for youth members requires a leader or parent to enable it individually</li>
+      <li>✅ Prayer requests and praise reports from youth accounts are posted <strong>anonymously</strong></li>
+      <li>✅ A keyword safety filter automatically blocks messages containing phone numbers, addresses, emails, and grooming language</li>
+      <li>✅ All blocked messages are logged and reviewed by the app's admin</li>
+      <li>✅ <strong>We do not knowingly collect personal data from children under 13</strong> — accounts for children under 13 must be created and managed by a parent or guardian</li>
+    </ul>
+    <p><strong>For parents:</strong> If you believe your child has created an account without your knowledge or if you want to request deletion of their data, email us at <a href="mailto:debeortiz@gmail.com">debeortiz@gmail.com</a>. We will respond within 72 hours and delete the account within 14 days.</p>
+    <p><strong>Parent Approval Email:</strong> When a leader invites a minor to a group, a parent approval email is sent to the email you provide. The minor cannot join until you approve via the link in that email.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="section-number">6</span> Data Retention &amp; Deletion</h2>
+    <p>Your data is retained for as long as your account is active. When you delete your account:</p>
+    <ul>
+      <li>Your profile, prayer requests, messages, and fasting records are permanently deleted within 30 days</li>
+      <li>Content you posted to group chats is anonymised (sender name replaced with "Deleted User")</li>
+      <li>Backup copies are removed within 90 days</li>
+    </ul>
+    <p>To request account deletion, email <a href="mailto:debeortiz@gmail.com">debeortiz@gmail.com</a> with subject line "Account Deletion Request" and include the email used to register.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="section-number">7</span> Security</h2>
+    <ul>
+      <li>All data in transit is encrypted using TLS 1.2+</li>
+      <li>Authentication is managed by Supabase Auth (industry-standard JWT tokens)</li>
+      <li>Passwords are never stored in plain text</li>
+      <li>Supabase Row Level Security (RLS) policies ensure users can only access their own data and data from groups they belong to</li>
+      <li>Avatar files are stored in a private Supabase Storage bucket</li>
+    </ul>
+    <p>No security system is perfect. If you discover a security vulnerability, please report it to <a href="mailto:debeortiz@gmail.com">debeortiz@gmail.com</a>.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="section-number">8</span> Your Rights</h2>
+    <p>Depending on your location, you may have the following rights. Contact us to exercise any of them.</p>
+    <div class="rights-grid">
+      <div class="right-card">
+        <div class="right-icon">👁️</div>
+        <div class="right-title">Access</div>
+        <div class="right-desc">Request a copy of all personal data we hold about you.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-icon">✏️</div>
+        <div class="right-title">Correction</div>
+        <div class="right-desc">Update or correct inaccurate personal information.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-icon">🗑️</div>
+        <div class="right-title">Deletion</div>
+        <div class="right-desc">Request permanent deletion of your account and all associated data.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-icon">🚫</div>
+        <div class="right-title">Opt-Out</div>
+        <div class="right-desc">Disable push notifications at any time in your device settings.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-icon">📦</div>
+        <div class="right-title">Portability</div>
+        <div class="right-desc">Request a machine-readable export of your personal data (GDPR).</div>
+      </div>
+      <div class="right-card">
+        <div class="right-icon">⛔</div>
+        <div class="right-title">Object</div>
+        <div class="right-desc">Object to specific processing activities (GDPR / CCPA).</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="section-number">9</span> Cookies &amp; Analytics</h2>
+    <p>The Holy Hour War Room mobile app does <strong>not</strong> use cookies or third-party analytics SDKs (e.g., Google Analytics, Firebase Analytics, Facebook SDK).</p>
+    <p>The only local storage used is <strong>AsyncStorage</strong> (on mobile) and <strong>localStorage</strong> (on web), used exclusively to persist your login session between app launches.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="section-number">10</span> International Users</h2>
+    <p>Holy Hour War Room is available globally. User data is stored on Supabase servers in the United States (AWS us-east-1) and EU (Supabase Frankfurt cluster, depending on your selected region).</p>
+    <p><strong>EU / UK users (GDPR):</strong> Our legal basis for processing is <em>contract performance</em> (operating the app you signed up for) and <em>legitimate interest</em> (safety moderation). You have the rights listed in Section 8.</p>
+    <p><strong>California users (CCPA):</strong> We do not sell personal data. You have the right to know, delete, and opt out of sale (not applicable here).</p>
+    <p><strong>Brazil users (LGPD):</strong> We comply with Brazil's General Data Protection Law. Contact us for any data subject requests.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="section-number">11</span> Changes to This Policy</h2>
+    <p>If we make material changes to this Privacy Policy, we will notify you in-app and update the "Last Updated" date above. Continued use of the app after changes constitute acceptance of the new policy.</p>
+    <p>We will never reduce your rights or increase data sharing without explicit notice and, where required by law, your consent.</p>
+  </div>
+
+  <div class="contact-card">
+    <div class="icon">✉️</div>
+    <h2>Contact &amp; Data Requests</h2>
+    <p>For any privacy question, data deletion request, or child safety concern:</p>
+    <p><a href="mailto:debeortiz@gmail.com">debeortiz@gmail.com</a></p>
+    <p><a href="mailto:cristovieneprontobydeborah@gmail.com">cristovieneprontobydeborah@gmail.com</a></p>
+    <p style="margin-top:10px; font-size:13px;">We respond within <strong style="color:var(--gold)">72 hours</strong>.</p>
+    <a href="mailto:debeortiz@gmail.com" class="email-link">Send a Privacy Request</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 <strong>Holy Hour War Room</strong>. All rights reserved.</p>
+  <p style="margin-top:6px;">This privacy policy was written for the Google Play Store, Apple App Store, and GDPR / COPPA / CCPA compliance.</p>
+</footer>
+
+</body>
+</html>
